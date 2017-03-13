@@ -1,0 +1,42 @@
+<div class="user-info modal-header">
+    <p>User Information</p>
+</div>
+<div class="user-info modal-body">
+    <table>
+        <tr>
+            <td>Firstname</td>
+            <td>{{ user.first_name }}</td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td>{{ user.last_name }}</td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>{{ user.username }}</td>
+        </tr>
+        <tr>
+            <td>User Id</td>
+            <td>{{ user.id_number }}</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>{{ user.role }}</td>
+        </tr>
+        <tr>
+            <td>Insurer</td>
+            <td>{{ user.insurer }}</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>{{ user.address1 }}</td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td>{{ user.email_address }}</td>
+        </tr>
+    </table>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">CLOSE</button>
+</div>
